@@ -3,23 +3,23 @@ language: cpp
 jobs:
   include:
     - dist: xenial
-        arch: amd64
-        group: edge
+      arch: amd64
+      group: edge
         #group: dev
-        script:
-          - g++ hello_world.cpp -o hello_world
-          - ./hello_world
-      - dist: bionic
-        arch: amd64
-        group: edge
+      script:
+        - g++ hello_world.cpp -o hello_world
+        - ./hello_world
+    - dist: bionic
+      arch: amd64
+      group: edge
         #group: dev
-        script:
-          - g++ hello_world.cpp -o hello_world
-          - ./hello_world
-      - dist: focal
-        arch: amd64
-        group: edge
+      script:
+        - g++ hello_world.cpp -o hello_world
+        - ./hello_world
+    - dist: focal
+      arch: amd64
+      group: edge
         #group: dev
-        script:
-          - g++ hello_world.cpp -o hello_world
-          - ./hello_world
+      script:
+        - g++ hello_world.cpp -o hello_world
+        - ./hello_world
